@@ -1,0 +1,29 @@
+<!-- header.html -->
+<nav
+  [ngClass]="{
+    'bg-blue-800 bg-opacity-90 border border-white border-opacity-20 shadow-md': isScrolled,
+    'bg-blue-800': !isScrolled
+  }"
+  class="fixed top-2 md:top-3 left-1/2 transform -translate-x-1/2 z-50 w-auto bg-blue-900/80 backdrop-blur-md border border-transparent rounded-full px-6 py-2 flex items-center justify-center transition-all duration-300"
+>
+  <ul class="flex gap-6">
+    <li>
+      <a href="#inicio" class="transition-colors duration-200 hover:text-dark-softBlue">Inicio</a>
+    </li>
+    <li>
+      <a href="#sobre-mi" class="transition-colors duration-200 hover:text-dark-softBlue"
+        >Sobre mí</a
+      >
+    </li>
+    <li>
+      <a href="#proyectos" class="transition-colors duration-200 hover:text-dark-softBlue"
+        >Proyectos</a
+      >
+    </li>
+    <li>
+      <a href="#contacto" class="transition-colors duration-200 hover:text-dark-softBlue"
+        >Contacto</a
+      >
+    </li>
+  </ul>
+</nav>
