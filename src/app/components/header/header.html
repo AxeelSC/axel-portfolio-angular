@@ -1,29 +1,43 @@
-<!-- header.html -->
-<nav
+<header
   [ngClass]="{
-    'bg-blue-800 bg-opacity-90 border border-white border-opacity-20 shadow-md': isScrolled,
-    'bg-blue-800': !isScrolled
+    'bg-navyBlue/60 backdrop-blur-sm ring-4 ring-yellow-500 ring-offset-navyBlue shadow-md':
+      isScrolled(),
+    'bg-navyBlue border-transparent': !isScrolled()
   }"
-  class="fixed top-2 md:top-3 left-1/2 transform -translate-x-1/2 z-50 w-auto bg-blue-900/80 backdrop-blur-md border border-transparent rounded-full px-6 py-2 flex items-center justify-center transition-all duration-300"
+  class="fixed top-2 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-center w-auto px-0 py-1.5 rounded-full border transition-all duration-300"
 >
-  <ul class="flex gap-6">
-    <li>
-      <a href="#inicio" class="transition-colors duration-200 hover:text-dark-softBlue">Inicio</a>
-    </li>
-    <li>
-      <a href="#sobre-mi" class="transition-colors duration-200 hover:text-dark-softBlue"
-        >Sobre mí</a
+  <nav class="flex px-3 items-center justify-center text-sm font-medium rounded-full text-softGray">
+    <a
+      href="#inicio"
+      class="relative block px-2 py-2 whitespace-nowrap transition hover:text-navyBlueSoft"
+      >Inicio</a
+    >
+    <a
+      href="#sobre-mi"
+      class="relative block px-2 py-2 whitespace-nowrap transition hover:text-navyBlueSoft"
+      >Sobre mí</a
+    >
+    <a
+      href="#proyectos"
+      class="relative block px-2 py-2 whitespace-nowrap transition hover:text-navyBlueSoft"
+      >Proyectos</a
+    >
+    <a
+      href="#contacto"
+      class="relative block px-2 py-2 whitespace-nowrap transition hover:text-navyBlueSoft"
+      >Contacto</a
+    >
+
+    <!-- Botón dark mode envuelto en un div -->
+    <div class="relative ml-1 mr-1">
+      <button
+        id="theme-toggle-btn"
+        (click)="toggleTheme()"
+        class="block px-2 py-2 transition hover:text-navyBlueSoft"
       >
-    </li>
-    <li>
-      <a href="#proyectos" class="transition-colors duration-200 hover:text-dark-softBlue"
-        >Proyectos</a
-      >
-    </li>
-    <li>
-      <a href="#contacto" class="transition-colors duration-200 hover:text-dark-softBlue"
-        >Contacto</a
-      >
-    </li>
-  </ul>
-</nav>
+        <span *ngIf="theme === 'light'">☀️</span>
+        <span *ngIf="theme === 'dark'">🌙</span>
+      </button>
+    </div>
+  </nav>
+</header>

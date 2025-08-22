@@ -9,17 +9,29 @@ module.exports = {
         sans: ['Inter', 'sans-serif'], // Fuente principal
       },
       colors: {
-        // Paleta azulada personalizada
-        dark: {
-          DEFAULT: '#0f172a', // similar a slate-900
-          light: '#1e293b', // similar a slate-800
-          softer: '#334155', // similar a slate-700
-          softBlue: '#3B82F6',
+        navyBlue: '#0f172a', // primario
+        navyBlueSoft: '#4B68B8', // secundario
+        softGray: '#F3F4F6', // texto por defecto
+        accent: '#1e293b',
+      },
+      keyframes: {
+        slideLeft: {
+          '0%': { transform: 'translateX(-80px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
         },
-        text: {
-          soft: '#1f2937', // gray-800 en Tailwind
-          accent: '#93c5fd', // azul clarito (para links/detalles)
+        slideRight: {
+          '0%': { transform: 'translateX(80px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        'slide-left': 'slideLeft 3s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+        'slide-right': 'slideRight 3s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+        'fade-in': 'fadeIn 1s ease-out forwards',
       },
     },
   },

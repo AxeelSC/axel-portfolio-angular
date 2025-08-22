@@ -1,13 +1,84 @@
 <section
-  id="hero"
-  class="hero min-h-screen flex flex-col justify-center items-center text-center px-4"
+  class="flex flex-col-reverse md:flex-row items-center justify-between px-0 md:px-0 py-8 md:py-12"
 >
-  <h1 class="text-5xl font-bold mb-4 text-soft-white">¡Hola, soy Axel!</h1>
-  <p class="text-lg text-gray-300 mb-8">Desarrollador web | Portfolio personal</p>
-  <a
-    href="#projects"
-    class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-500 transition"
+  <!-- Información personal -->
+  <div class="flex-1 opacity-0 animate-slide-left md:animate-slide-left md:animate-fade-in">
+    <h1 class="text-4xl font-bold text-softGray mb-4">Hola, soy Axel</h1>
+    <p class="text-softGray mb-6">
+      Desarrollador Frontend apasionado por crear interfaces elegantes y funcionales.
+    </p>
+    <div class="flex gap-4">
+      <!-- LinkedIn -->
+      <a
+        href="https://linkedin.com"
+        target="_blank"
+        class="flex items-center justify-center gap-2 px-3 py-2 border border-softGray rounded-full text-softGray hover:text-navyBlueSoft hover:border-navyBlueSoft transition-colors"
+      >
+        <!-- SVG LinkedIn -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.379-.028-3.156-1.922-3.156-1.923 0-2.218 1.503-2.218 3.055v5.601h-3v-10h2.879v1.367h.041c.401-.761 1.379-1.561 2.838-1.561 3.035 0 3.596 1.998 3.596 4.595v5.599z"
+          />
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:email@ejemplo.com"
+        class="flex items-center justify-center gap-2 px-3 py-2 border border-softGray rounded-full text-softGray hover:text-navyBlueSoft hover:border-navyBlueSoft transition-colors"
+      >
+        <!-- SVG Email -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 12.713l-11.714-7.713h23.428l-11.714 7.713zm0 2.574l-12-7.999v12.712h24v-12.712l-12 7.999z"
+          />
+        </svg>
+        <span>Contact</span>
+      </a>
+      <!-- Botón Disponible para trabajar -->
+      <a
+        href="https://linkedin.com/in/axel"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <div class="flex items-center">
+          <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
+            <!-- Borde animado -->
+            <span
+              class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
+            ></span>
+            <!-- Contenido del botón -->
+            <div
+              class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap"
+            >
+              Disponible para trabajar
+            </div>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Foto -->
+  <div
+    class="flex-1 opacity-0 animate-slide-right md:animate-slide-right md:animate-fade-in mb-6 md:mb-0"
   >
-    Ver mis proyectos
-  </a>
+    <img
+      src="/imagen_avatar.jpg"
+      alt="Axel"
+      class="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-lg object-cover mx-auto"
+    />
+  </div>
 </section>
