@@ -1,0 +1,19 @@
+<section class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="flex items-center justify-center gap-3 text-3xl font-bold mb-10 text-textPrimary">
+      Skills
+    </h2>
+
+    <div class="space-y-10">
+      @for (card of cards; track card.title) {
+      <div class="w-full flex flex-col space-y-4">
+        <!-- Título de la card -->
+        <h3 class="text-xl font-semibold text-accent">{{ card.title }}</h3>
+
+        <!-- Renderizamos los íconos mediante SkillsCard -->
+        <app-skills-card [title]="card.title" [icons]="card.icons"></app-skills-card>
+      </div>
+      }
+    </div>
+  </div>
+</section>

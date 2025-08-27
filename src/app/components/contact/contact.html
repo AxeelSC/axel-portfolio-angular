@@ -1,15 +1,58 @@
-<!-- 📩 CONTACTO -->
-<section id="contact" class="py-16 px-6">
-  <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-  <form class="max-w-lg flex flex-col gap-4">
-    <input type="text" placeholder="Name" class="p-3 border rounded" />
-    <input type="email" placeholder="Email" class="p-3 border rounded" />
-    <textarea placeholder="Message" class="p-3 border rounded h-32"></textarea>
-    <button
-      type="submit"
-      class="bg-indigo-500 text-white py-3 px-6 rounded hover:bg-indigo-600 transition"
+<section class="py-20 bg-primaryDarker dark:bg-primaryDarker">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Título -->
+    <h2
+      class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-textPrimary/80 dark:text-white"
     >
-      Send
-    </button>
-  </form>
+      <svg
+        class="size-8 text-primary"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+        <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+        <path d="M15 19l2 2l4 -4"></path>
+      </svg>
+      Sobre mí
+    </h2>
+
+    <!-- Contenido en dos columnas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <!-- Texto -->
+      <div>
+        <p class="text-lg text-textPrimary/80 dark:text-gray-300 leading-relaxed">
+          ¡Hola! 👋 Soy
+          <span class="font-semibold text-primary">Axel</span>, un desarrollador apasionado por la
+          creación de experiencias digitales modernas, eficientes y escalables.
+        </p>
+
+        <p class="mt-4 text-lg text-textPrimary/80 dark:text-gray-300 leading-relaxed">
+          Me especializo en
+          <span class="font-semibold">Angular, .NET y Azure</span>, con un enfoque en la
+          arquitectura de software, patrones de diseño y soluciones multiplataforma.
+        </p>
+
+        <p class="mt-4 text-lg text-textPrimary/80 dark:text-gray-300 leading-relaxed">
+          Cuando no estoy programando, me gusta aprender nuevas tecnologías, leer sobre psicología y
+          explorar la inteligencia artificial aplicada al desarrollo. 🚀
+        </p>
+      </div>
+
+      <!-- Imagen -->
+      <div class="flex justify-center">
+        <img
+          src="/imagen_avatar.jpg"
+          alt="Foto de perfil"
+          class="w-64 h-64 object-cover rounded-2xl shadow-xl transform rotate-3 hover:rotate-0 transition duration-300"
+        />
+      </div>
+    </div>
+  </div>
 </section>

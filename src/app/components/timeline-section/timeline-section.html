@@ -1,0 +1,12 @@
+<section class="relative">
+  <div class="relative max-w-5xl mx-auto">
+    <div
+      class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-secondary/50 to-secondary/20 z-0"
+    ></div>
+
+    @for (item of timelineItems; track item; let i = $index) {
+    <app-timeline-item [data]="item" [position]="i % 2 === 0 ? 'left' : 'right'">
+    </app-timeline-item>
+    }
+  </div>
+</section>

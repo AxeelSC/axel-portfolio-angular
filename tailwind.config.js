@@ -9,14 +9,14 @@ module.exports = {
         sans: ['Inter', 'sans-serif'], // Fuente principal
       },
       colors: {
-        primary: '#4B68B8', // primario
+        primary: '#7AB8FF', // primario
         primaryDarker: '#0f172a', // secundario
         softGray: '#F3F4F6', // texto por defecto
         accent: '#fb923c',
         accentDarker: '#C2410C',
         secondary: '#51E4B8', //Green-400
         secondaryDarker: '#1A9E80', //Green-400
-        stateHover: '#4B68B8', // ← Nivel principal
+        stateHover: '#628EF5', // ← Nivel principal
         stateActive: '#2BC49F', // ← Nivel principal
         textPrimary: '#F3F4F6', // ← text-textPrimary
         textSecondary: '#4B68B8', // ← text-textSecondary
