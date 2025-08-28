@@ -23,6 +23,8 @@ export class SkillsSection {
     { name: 'Angular', src: '/icons/angular.svg' },
     { name: 'TypeScript', src: '/icons/typescript.svg' },
     { name: 'C#', src: '/icons/csharp.svg' },
+    { name: 'TypeScript', src: '/icons/typescript.svg' },
+    { name: 'C#', src: '/icons/csharp.svg' },
   ];
 
   // Data para herramientas
@@ -35,6 +37,6 @@ export class SkillsSection {
   cards = [
     { title: 'Frontend', icons: this.frontendIcons },
     { title: 'Backend', icons: this.backendIcons },
-    { title: 'Tools & DevOps', icons: this.toolsIcons },
+    { title: 'Tools', icons: this.toolsIcons },
   ];
 }

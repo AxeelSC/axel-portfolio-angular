@@ -1,0 +1,37 @@
+<section id="proyectos" class="w-full mx-auto container lg:max-w-5xl md:max-w-3xl py-20">
+  <!-- Title with icon -->
+  <h2 class="flex items-center justify-center gap-3 text-3xl font-bold mb-10 text-textPrimary">
+    <svg
+      class="size-7 text-primary"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M7 8l-4 4l4 4"></path>
+      <path d="M17 8l4 4l-4 4"></path>
+      <path d="M14 4l-4 16"></path>
+    </svg>
+    Proyectos
+  </h2>
+
+  <!-- Projects grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    @for (project of projects; track project.name) {
+    <app-project-card
+      [name]="project.name"
+      [description]="project.description"
+      [image]="project.image"
+      [technologies]="project.technologies"
+      [preview]="project.preview"
+      [github]="project.github"
+    ></app-project-card>
+    }
+  </div>
+</section>

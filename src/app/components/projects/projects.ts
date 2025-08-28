@@ -15,7 +15,7 @@ export class Projects {
       descripcion: 'Mi portfolio web con Angular y Tailwind.',
       imagen: 'Project_Image.jpg',
       tecnologias: ['Angular', 'Tailwind', 'TypeScript'],
-      demo: '#',
+      preview: '#',
       github: 'https://github.com/AxeelSC',
     },
     {
@@ -23,7 +23,7 @@ export class Projects {
       descripcion: 'Gestión de reservas y pedidos online.',
       imagen: 'Project_Image.jpg',
       tecnologias: ['React Native', '.NET API', 'Azure'],
-      demo: '#',
+      preview: '#',
       github: 'https://github.com/AxeelSC',
     },
     {
@@ -31,7 +31,7 @@ export class Projects {
       descripcion: 'Panel de control interactivo con estadísticas.',
       imagen: 'Project_Image.jpg',
       tecnologias: ['Angular', 'NgRx', 'Chart.js'],
-      demo: '#',
+      preview: '#',
       github: 'https://github.com/AxeelSC',
     },
   ];

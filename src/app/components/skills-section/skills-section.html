@@ -1,15 +1,29 @@
 <section class="py-20">
   <div class="container mx-auto px-6">
     <h2 class="flex items-center justify-center gap-3 text-3xl font-bold mb-10 text-textPrimary">
+      <svg
+        class="size-7 text-primary"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        />
+      </svg>
       Skills
     </h2>
 
     <div class="space-y-10">
       @for (card of cards; track card.title) {
       <div class="w-full flex flex-col space-y-4">
-        <!-- Título de la card -->
-        <h3 class="text-xl font-semibold text-accent">{{ card.title }}</h3>
-
         <!-- Renderizamos los íconos mediante SkillsCard -->
         <app-skills-card [title]="card.title" [icons]="card.icons"></app-skills-card>
       </div>

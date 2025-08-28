@@ -1,12 +1,40 @@
 <section class="relative">
   <div class="relative max-w-5xl mx-auto">
-    <div
-      class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-secondary/50 to-secondary/20 z-0"
-    ></div>
+    <!-- Título con icono -->
+    <h2
+      class="flex items-center justify-center gap-3 text-3xl font-bold mb-10 text-textPrimary z-10 relative"
+    >
+      <svg
+        class="w-7 h-7 text-primary"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+        ></path>
+        <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+        <path d="M12 12l0 .01"></path>
+        <path d="M3 13a20 20 0 0 0 18 0"></path>
+      </svg>
+      Experiencia laboral
+    </h2>
+    <!-- Contenedor de la línea + items -->
+    <div class="relative">
+      <!-- Línea vertical solo detrás de los items -->
+      <div
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-secondary/50 to-secondary/20 z-0"
+      ></div>
 
-    @for (item of timelineItems; track item; let i = $index) {
-    <app-timeline-item [data]="item" [position]="i % 2 === 0 ? 'left' : 'right'">
-    </app-timeline-item>
-    }
+      @for (item of timelineItems; track item; let i = $index) {
+      <app-timeline-item [data]="item" [position]="i % 2 === 0 ? 'left' : 'right'">
+      </app-timeline-item>
+      }
+    </div>
   </div>
 </section>
